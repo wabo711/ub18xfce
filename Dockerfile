@@ -8,7 +8,7 @@ ARG user_password="ubuntu"
 ENV DEBIAN_FRONTEND=noninteractive \
     HOSTNAME=DeskTop
 
-# Locale and Language setting
+# Locale and Language Setting
 RUN apt-get update && apt-get install -y \
     ibus-mozc language-pack-ja-base language-pack-ja fonts-takao \
     && apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
